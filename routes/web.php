@@ -91,13 +91,26 @@ Route::resource('/admin/dataportal/property','Admin\PropertyController', ['as'=>
 Route::get('/admin/dataportal/property-attributes','Admin\PropertyAttributeController@index')->name('propertyAttribute');
 
 
+
+
 //Route::get('/edu','Admin\EducationController@index');
 Route::get('edu/education/tab_visualization','SystemController@tab1');
+
 
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::resource('users', 'AdminController');
 });
+
+/**
+ * users routes
+ */
+Route::group(['prefix'=>'users','namespace'=>'Admin'],function ()
+{
+    Route::resource('/users-data','UserController');
+});
+
+
 
 // News ..... routes 
 Route::resource('/admin/dataportal/news','Admin\NewsController', ['as'=> 'admin']); 
