@@ -25,7 +25,7 @@
             <div class="form-group"> 
                 <div class="row">
                     <label class="col-md-3">PROPERTY TITLE </label>
-                    <div class="col-md-6"><input type="text" name="property_title" class="form-control"></div>
+                    <div class="col-md-6"><input type="text" placeholder="property title" name="property_title" class="form-control"></div>
                     <div class="clearfix"></div>
 
                 </div>
