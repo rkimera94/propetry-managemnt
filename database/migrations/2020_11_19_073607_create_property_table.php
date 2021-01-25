@@ -21,7 +21,7 @@ class CreatePropertyTable extends Migration
             $table->string('unit_description');
             $table->string('Address_1');
             $table->string('Address_2');
-            $table->string('Address_3');
+            $table->string('Address_3')->nullable();
             $table->string('village');
             $table->timestamps();
         });
