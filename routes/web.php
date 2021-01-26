@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 
 
+
 //  my routes 
 
 //import and download excel files from the system 
@@ -114,6 +115,7 @@ Route::group(['prefix'=>'users','namespace'=>'Admin'],function ()
 
 // News ..... routes 
 Route::resource('/admin/dataportal/news','Admin\NewsController', ['as'=> 'admin']); 
+
 
 
 /**

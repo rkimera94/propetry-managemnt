@@ -46,6 +46,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapRentalRoutes();
+
         //
     }
 
@@ -77,4 +79,19 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
     }
+
+    /**
+     * 
+     * add custom routes 
+     */
+
+        protected function mapRentalRoutes()
+    {
+        Route::middleware('rentals')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/rentals.php'));
+    }
+    
+
+
 }

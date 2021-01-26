@@ -25,6 +25,8 @@
        --}} 
 
       <p>
+      <a href="{{ route('rentals')}}" class="btn btn-primary">Rentals</a>
+      <a href="{{route('edu.property.index')}}" class="btn btn-primary">land</a>
       <a href="{{ route('edu.property.create')}}" class="btn btn-primary"> CREATE NEW PROPETY</a>
       <a href="{{route('propertyAttribute')}}" class="btn btn-primary">ADD PROPERTY ATTRIBUTES</a>
       </p>
